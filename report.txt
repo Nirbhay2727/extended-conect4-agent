@@ -1,0 +1,36 @@
+Submitted by- Harshit Mawandia(2020CS10348) and Nirbhay Kumar(2020CS10365)
+
+COL333 ASSIGNMENT 2
+
+PROBLEM STATEMENT:
+Given a state of a board in modified connect four, determine the optimal move.
+
+
+KEY IDEA:
+We apply depth limited expectimax algorithm for implementing the random agent.
+We apply depth limited minimax algorithm for implementing the AI agent with our self made evaluation function and alpha beta pruning.
+
+
+EVALUATION FUNCTION:
+Evaluation function is mainly the difference of get_score of each player for the given board configuration. This is incremented and decremented accoridng to the 
+criteria of how much the agent's and opponent's square is towards the center respectively.
+The values are further normalised.
+
+
+ALGORITHM DESCRIPTION:
+Expectimax
+1. If the current call is a maximizer node, return the maximum of the state values of the nodes successors.
+2. If the current call is a terminal node, then return the average of the state values of the nodes successors. 
+3. We call the function recursively until we reach a terminal node(the state with no successors)or the cut-off value of depth. We then return the get_points for the state or the evaluation for the state respt.
+
+Minimax
+1. If the current call is a maximizer node, return the maximum of the state values of the nodes successors.
+2. If the current call is a terminal node, then return the minimum of the state values of the nodes successors.
+3. We call the function recursively until we reach a terminal node(the state with no successors)or the cut-off value of depth. We then return the get_points for the state or the evaluation for the state respt.
+
+
+TESTING: 
+AI agent wins everytime with a random agent. The score is 2-5 times more.
+In AI vs AI the games are close with greater score within 1.5 times the lesser score.
+
+
