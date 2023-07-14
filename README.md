@@ -1,5 +1,7 @@
 # Interaction with the Game Simulator
 
+Full details- https://lily-molybdenum-65d.notion.site/Assignment-II-Game-Playing-AI-Agent-872f070aa29e4f5e85110c3428b15151
+
 The following command will initiate a game of ExtendedConnect4 between **agent_1** and **agent_2** with the initial state given at the **test_case_path**. The script can be invoked with several options described subsequently. The command should display the GUI showing the game. This time available to make a move is controlled by parameter `time`. 
 
 ```python
